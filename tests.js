@@ -13,3 +13,24 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+//Doc Rob's Example:
+describe('foo', function () {
+    it('should return true if 2 === 2', function () {
+        let expectedResult = 2;
+        let actualResult = 2;
+        expect(actualResult) .toBe(expectedResult)
+    });
+})
+
+describe('sayHello', function () {
+    it('should be a defined function', function () {
+    });
+})
+
+describe('sayHello', function (){
+    it('should should return a string when called', function () {
+        expect(typeof helloWorld()).toBe("string")
+})
+
+
+});
