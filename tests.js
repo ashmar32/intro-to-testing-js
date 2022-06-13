@@ -21,14 +21,18 @@ describe('foo', function () {
         expect(actualResult) .toBe(expectedResult)
     });
 })
-
+//When working with the same function, I need to use the same describe and just add a new "it" and "expect"
 describe('sayHello', function () {
     it('should be a defined function', function () {
+        expect(typeof sayHello).toBe("function")
     });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string")
+    });
+    it('should return "Hello, Jane!"', function () {
+        expect(sayHello("Jane")).toBe("Hello, Jane!")
+    });
+
 })
 
-describe('sayHello', function (){
-    it('should return a string when called', function () {
-        expect(typeof sayHello(" ")).toBe("string")
-    });
-});
+
