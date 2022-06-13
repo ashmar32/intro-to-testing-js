@@ -32,7 +32,11 @@ describe('sayHello', function () {
     it('should return "Hello, Jane!"', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!")
     });
-
 })
-
+describe('sayHelloAlex', function (){
+    it('should return "Hello, Alex!"', function () {
+        expect(sayHelloAlex).toBe("Hello, Alex!")
+        
+    });
+})
 
